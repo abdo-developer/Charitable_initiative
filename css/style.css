@@ -1,0 +1,446 @@
+@font-face {
+    src: url(../fonts/JFFlatregular.ttf);
+    font-family: ar-font;
+    font-size: 15px;
+}
+
+/* تنسيقات خاصة بالصفحة بشكل افتراضي */
+
+body {
+    direction: rtl;
+    font-family: ar-font;
+    font-size: 15px;
+}
+
+/* تنسيقات خاصة بالهيدر */
+
+header.top__header .overlay {
+    background: linear-gradient( to right, rgba(3, 50, 94, 0.863) 0%, rgba(168, 177, 12, 0.8) 100%);
+}
+
+header.top__header a img {
+    height: 45px;
+}
+
+header.top__header nav.navbar ul {
+    padding: 0;
+}
+
+header.top__header nav button.navbar-toggler {
+    background-color: orange;
+}
+
+header.top__header nav.navbar ul li a {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+header.top__header nav.navbar ul li a:hover {
+    color: orange;
+}
+
+header.top__header #carouselTextIndicators ol {
+   margin-bottom: 0;
+}
+
+header.top__header #carouselTextIndicators ol li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #073f60;
+}
+
+header.top__header #carouselTextIndicators .carousel-inner .carousel-item h3.title_indicators {
+    color: wheat;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+header.top__header #carouselTextIndicators .carousel-inner .carousel-item p.text_indicators {
+    color: white;
+    padding: 40px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* تنسيقات خاصة بقسم من نحن */
+
+section.about-us p.text_AboutUs {
+    text-align: justify;
+    border: 4px inset #073f60;
+    padding: 14px;
+    font-size: 16px;
+    color: black;
+}
+
+/**تنسيقات مشاريعنا السابقة**/
+
+h3.title_section {
+    margin:  35px 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+section.work-gallery a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+section.work-gallery a .hover {
+    background-color: #073f60e3;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+section.work-gallery a:hover .hover {
+    opacity: 1;
+}
+
+
+section.work-gallery a .hover svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+}
+
+section.work-gallery .overlay-gallery {
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.932);  
+    padding: 5% 10%;
+    opacity: 0;
+    transition: all 1s ease;
+    margin-top: -100vh;
+}
+
+section.work-gallery .overlay-gallery:target {
+    opacity: 1;
+    margin-top: 0;
+}
+
+section.work-gallery .overlay-gallery img {
+    width: 100%;
+}
+
+section.work-gallery .overlay-gallery .gallery-text h3 {
+    font-size: 35px;
+    line-height: 50px;
+    color: wheat;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section.work-gallery .overlay-gallery .gallery-text  ul {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+    padding-right: 0;
+}
+
+section.work-gallery .overlay-gallery .gallery-text  ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+section.work-gallery .overlay-gallery .gallery-text  ul li a:hover {
+    color: #2fa6eb;
+}
+
+section.work-gallery .overlay-gallery .gallery-text  ul li svg {
+    color: goldenrod;
+}
+
+section.work-gallery .overlay-gallery .gallery-text p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 50px;
+    color: rgb(221, 221, 221);
+    font-weight: normal;
+    text-align: justify;
+}
+
+section.work-gallery .overlay-gallery .gallery-text a.visit {
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 25px;
+    padding: 0px 30px;
+    background-color: #073f60;
+    color: goldenrod;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+section.work-gallery .overlay-gallery .gallery-text a.visit:hover {
+    background-color: #073f60d7;
+    color: gold;
+}
+
+section.work-gallery .overlay-gallery a.close {
+    color: rgb(199, 144, 6);
+    position: absolute;
+    left: 5%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* تنسيقات تواصل معنا */
+
+section.contact_us form .form-group label {
+    text-align: right;
+    font-size: 18px;
+    color: black;
+}
+
+section.contact_us form .form-group label svg {
+    color: #073f60;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+section.contact_us form button.custom-btn {
+    margin-bottom: 15px;
+    background-color: #073f60;
+    border-radius: 25px;
+    padding: 8px 20px;
+    border-color: transparent;
+    transition: all 0.5s ease;
+}
+
+section.contact_us form button.custom-btn:hover,
+section.contact_us form button.custom-btn:active,
+section.contact_us form button.custom-btn:focus {
+    background-color: #126291;
+    color: goldenrod;
+}
+
+section.contact_us form button.custom-btn svg {
+    margin-right: 5px;
+}
+
+section.contact_us h3.title_maps {
+    font-size: 22px;
+    margin-top: 15px;    
+}
+
+/* تنسيقات قسم :: طرق التبرعات ووسائل الاتصال المباشر بنا  */
+
+section.latest-section {
+    background-image: url(../images/donation.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14px;
+}
+
+section.latest-section .title_latest h3 {
+    color: wheat;
+    margin-top: 20px;
+}
+
+section.latest-section ul {
+    padding: 0;
+}
+
+section.latest-section ul li {
+    margin-right: 8px !important;
+    margin-top: 25px;
+}
+
+section.latest-section ul li svg {
+    color: white;
+    font-size: 35px;
+}
+
+section.latest-section span {
+    color: white;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+section.latest-section span svg {
+    margin-left: 8px;
+}
+
+/* تنسيق الفوتر  */
+
+footer.latest__footer {
+    background-color: #073f60;
+    padding-top: 10px;
+}
+
+footer.latest__footer h5.text_copyright {
+    color: white;
+    font-size: 16px;
+    text-align: right;
+}
+
+footer.latest__footer .social-media-icons ul {
+    padding: 0;
+    text-align: left;
+}
+
+footer.latest__footer .social-media-icons ul li {
+    margin-right: 10px !important;
+    background-color: goldenrod;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+footer.latest__footer .social-media-icons ul li:hover,
+footer.latest__footer .social-media-icons ul li:active,
+footer.latest__footer .social-media-icons ul li:focus {
+    background-color: gold;
+}
+
+footer.latest__footer .social-media-icons ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+footer.latest__footer .social-media-icons ul li a:hover,
+footer.latest__footer .social-media-icons ul li a:active,
+footer.latest__footer .social-media-icons ul li a:focus {
+    color: rgb(15, 14, 14);
+}
+
+
+/** Responsive page **/
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+   
+    header.top__header #carouselTextIndicators .carousel-inner .carousel-item h3.title_indicators {
+        font-size: 20px;
+    }
+
+    header.top__header #carouselTextIndicators .carousel-inner .carousel-item p.text_indicators {
+        font-size: 16px;
+    }
+
+    header.top__header #carouselTextIndicators ol {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    section.work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    section.work-gallery .overlay-gallery img {
+        width: 90%;
+    }
+
+    section.work-gallery .overlay-gallery a.close {
+        left: 8%;
+    }
+
+    section.work-gallery .overlay-gallery .gallery-text p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 25px;
+        text-align: right;
+    }
+
+    section.work-gallery .overlay-gallery .gallery-text a.visit {
+        font-size: 16px;
+        line-height: 35px;
+        padding: 0px 20px;
+    }
+
+    .map iframe {
+        width: 300px;
+    }
+
+    section.latest-section .title_latest h3 {
+        font-size: 20px;
+    }
+
+    footer.latest__footer h5.text_copyright {
+        text-align: center ;
+        margin-bottom: 10px;
+    }
+
+    footer.latest__footer .social-media-icons ul {
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .map iframe {
+        width: 450px;
+    }
+
+    section.work-gallery .overlay-gallery .gallery-text p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: right;
+    }
+
+    section.work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    footer.latest__footer h5.text_copyright {
+        text-align: center ;
+        margin-bottom: 10px;
+    }
+
+    footer.latest__footer .social-media-icons ul {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer.latest__footer h5.text_copyright {
+        text-align: center ;
+        margin-bottom: 10px;
+    }
+
+    footer.latest__footer .social-media-icons ul {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .map iframe {
+        width: 475px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+ /* GOOD Responsive */
+}
+
+/* Fin Style The Page */
