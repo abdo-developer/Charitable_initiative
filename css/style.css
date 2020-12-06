@@ -370,11 +370,8 @@ footer.latest__footer .social-media-icons ul li a:focus {
         margin-right: 15px;
     }
 
-    section.work-gallery .overlay-gallery .gallery-text h3 {
+    header.top__header #carouselTextIndicators .carousel-inner .carousel-item h4.title {
         font-size: 20px;
-        line-height: 25px;
-        margin-bottom: 20px;
-        margin-top: 20px;
     }
 
     section.work-gallery .overlay-gallery img {
